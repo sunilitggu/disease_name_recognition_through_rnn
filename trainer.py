@@ -7,9 +7,11 @@ import theano
 import theano.tensor as T
 
 """
-Adagrad trainer. Initiated with a list of parameters tuples (the gradient of the first element will be computed with respect to second one, which must depends directly from the first in the computation graph. Both elements will often be the same), an epsilon, an initial learning rate, and regularization parameters.
-Will keep track of the past gradients to ajust the learning rate.
-The function get_updates return updates tuples for each parameter in the list.
+Adagrad trainer. Initiated with a list of parameters tuples (the gradient of the first element will be computed 
+with respect to second one, which must depend directly on the first in the computation graph. Both elements will 
+often be the same), an epsilon, an initial learning rate, and regularization parameters.
+Will keep track of the past gradients to adjust the learning rate.
+The function get_updates returns 'updated' tuples for each parameter in the list.
 """
 class AdagradTrainer():
     def __init__(self, params, lr = 0.05, e = 1.0, L1_reg=0., L2_reg=0.):
