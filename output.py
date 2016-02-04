@@ -9,7 +9,8 @@ from utils import *
 
 class Rec_OutputLayer(object): 
     """
-    Classic Output Layer for classification. We use a softmax to compute the conditional probabilities of tags given words, and use them for computing the log-likelihood of the actual tag sequence and with an argmax for decoding.
+    Classic Output Layer for classification. We use a softmax to compute the conditional probabilities of tags given words, 
+    and use them for computing the log-likelihood of the actual tag sequence and with an argmax for decoding.
     Inputs:
     input - theano tensor containing the hidden representations for the whole sentence
     n_in - dimension of the hidden representation
