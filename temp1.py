@@ -1,6 +1,6 @@
 # 					Disease mention recognition 
 
-#This code is a modify version of code provided by Matthieu Labeau in "Non-lexical neural architecture for fine-grained POS Tagging" https://github.com/MatthieuLabeau/NonlexNN
+#This code is a modified version of the code provided by Matthieu Labeau in "Non-lexical neural architecture for fine-grained POS Tagging" https://github.com/MatthieuLabeau/NonlexNN
 
 
 from model1 import *
