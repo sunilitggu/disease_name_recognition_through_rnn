@@ -5,7 +5,7 @@ import theano.tensor as T
 from utils import *
 
 """
-fname: file name of embedded word vectors each line is a vector 
+fname: file name of embedded word vectors. Each line in the file represents a vector. 
 n_f : is dimention of word vectors
 """
 def readWV(fname, n_f):
