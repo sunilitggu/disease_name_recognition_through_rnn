@@ -4,7 +4,7 @@ from collections import defaultdict
 import codecs
 
 """
-vocab is an input file which contains list word each line one word format
+vocab is word list
 """
 def create_wl(vocab):
 	wl = {}
