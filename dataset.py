@@ -8,7 +8,7 @@ import random
 
 # --- Processing Data : corpus ---
 """
-Class taking as inputs paths to text and corresponding tag files, with the vocabularies, to create a 'sampler' that will output 
+Class taking 1. paths to text and 2. corresponding tag files as inputs, to create a 'sampler' that will output 
 the necessary information for the network, sentence by sentence:
 n-grams of characters indexes
 index of the tag
