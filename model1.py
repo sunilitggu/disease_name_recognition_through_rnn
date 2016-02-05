@@ -23,7 +23,7 @@ model - 'ff' is feedforward, 'rnn' for bidirectional recurrent hidden Layer
 viterbi - True or False for outputing a structured sequence using Viterbi or not 
 fname- Embedded word vector file each line contain vector of corresponding word of vocab file or word list
 wl- word list 
-windim- window size of window base feed forwared neural network
+windim- window size of window based feed forwared neural network
 Inputs are mostly choices for the architecture and the training that the wrapper class will apply. Once everything is set, theano functions are created to train and evaluate the model, and access the parameters.
 """
 class SLLModel(object):
