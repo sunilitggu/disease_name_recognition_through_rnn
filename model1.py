@@ -83,14 +83,14 @@ class SLLModel(object):
 			# Output Layer
 			if(viterbi == True):
 				self.outputLayer = Structured_OutputLayer(
-					input=T.concatenate([self.hiddenLayer.output, self.hiddenLayer_reverse.output], axis = 1), 
+					input=T.concatenate([self.hiddenLayer.output, self.hiddenLayer_reverse.output[:,::-1]], axis = 1), 
 					n_in = n_hidden * 2, 
 					n_out = l_vocab_out, 
 					init = 'init_zeros'
 					)
 			else:
 				self.outputLayer = Rec_OutputLayer(
-					input = T.concatenate([self.hiddenLayer.output, self.hiddenLayer_reverse.output], axis = 1), 
+					input = T.concatenate([self.hiddenLayer.output, self.hiddenLayer_reverse.output[:,::-1]], axis = 1), 
 					n_in = n_hidden * 2, 
 					n_out = l_vocab_out, 
 					init = 'init_zeros'
